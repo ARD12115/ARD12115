@@ -1,65 +1,97 @@
-<h1 align="center">Hey <img src="https://raw.githubusercontent.com/SP-XD/SP-XD/refs/heads/main/images/Developer.gif" height="30px" width="30px"> I'm Abhinav Ravindra</h1>
+<div align="center">
 
-
-<img src="https://i.pinimg.com/originals/42/b4/22/42b4229a9ec3145edaa895b2415dd720.gif" alt="Banner" width="100%" />
-
-## 📌 About Me
-- 💡 <em>I'm a passionate developer who enjoys creating clean, scalable, and user-focused digital experiences. I love turning ideas into real products, solving problems with code, and continuously learning new technologies.</em>
-- 🚀 <em>My interests include full-stack development, frontend engineering, cloud tools, and building modern applications that are both functional and visually engaging.</em>
-- 🌱 <em>Currently exploring new concepts in web development, system design, and product-focused engineering while sharpening my problem-solving skills.</em>
-
-
-## 📊 GitHub Stats & Trophies
-<p align="center">
-  <img src="https://www.gitskins.com/api/section/stats?username=ard12115&theme=github-dark&mode=dark" alt="ard12115's GitHub Stats" width="49%" />
-  <img src="https://streak-stats.demolab.com/?user=ard12115&theme=nightowl&hide_border=true&cache_seconds=86400" alt="ard12115's GitHub Streak" width="49%" />
-</p>
-
-<p align="center">
-  <img src="https://www.gitskins.com/api/section/stack?username=ard12115&theme=github-dark&mode=dark" alt="Top Languages" />
-</p>
-<p align="center">
-  <img src="https://www.gitskins.com/api/section/highlights?username=ard12115&theme=github-dark&mode=dark" alt="Abhinav Ravindra's GitHub Trophies" />
-</p>
-<p align="center">
-  <img height="280em" src="https://www.gitskins.com/api/section/heatmap?username=ard12115&theme=github-dark&mode=dark" alt="ard12115's Activity Graph" />
-</p>
-
-
-
-
-## 🛠️ Languages & Tools
-
-> ## Programming Languages
-<p align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="48" height="48" style="margin: 4px;" /></p>
-
-> ## Frontend
-<p align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="48" height="48" style="margin: 4px;" /> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="Next.js" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" width="48" height="48" style="margin: 4px;" /></p>
-
-> ## Backend
-<p align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express.js" width="48" height="48" style="margin: 4px;" /></p>
-
-> ## Database
-<p align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" width="48" height="48" style="margin: 4px;" /></p>
-
-> ## DevOps & Cloud
-<p align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="Google Cloud" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" width="48" height="48" style="margin: 4px;" /></p>
-
-> ## Tools
-<p align="center"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="VS Code" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="48" height="48" style="margin: 4px;" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg" alt="Webpack" width="48" height="48" style="margin: 4px;" /> <img src="https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-icon.svg" alt="Vite" width="48" height="48" style="margin: 4px;" /></p>
-
-
-## 🔗 Connect with Me
-<p align="center"><a href="https://www.linkedin.com/in/your-handle" target="_blank"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/LinkedIN.svg" alt="LinkedIN" width="40" height="40" style="margin: 0 8px;"/></a> <a href="mailto:you@example.com" target="_blank"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/Gmail.svg" alt="Gmail" width="40" height="40" style="margin: 0 8px;"/></a></p>
+<p><sub>WOW PROFILE · ARD12115</sub></p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://www.gitskins.com/api/section/heatmap?username=ard12115&theme=github-dark&mode=dark&style=snake" />
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=ard12115&theme=github-dark&mode=dark&style=snake" />
-  <img alt="github-snake" src="https://www.gitskins.com/api/section/heatmap?username=ard12115&theme=github-dark&mode=dark&style=snake" />
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=living-identity&label=Abhinav%20Ravindra&v=wow-living-identity-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/hero?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=living-identity&label=Abhinav%20Ravindra&v=wow-living-identity-1&mode=dark" width="100%" alt="Abhinav Ravindra animated Living Identity portrait and ASCII name" />
+</picture>
+<p><strong>Developer exploring full-stack, AI, and interactive software</strong></p>
+<p>I build practical projects—from AI-powered tools to games—and enjoy learning by taking ideas from design to implementation.</p>
+<p><a href="https://github.com/ard12115">Explore my repositories</a></p>
+</div>
+
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
+
+<h2>What I’m interested in</h2>
+
+<table width="100%" style="display:table;width:100%;table-layout:fixed;">
+<tr>
+<td width="62%" valign="top"><p>I’m interested in building software that is useful, approachable, and thoughtfully put together. My projects span web development, Python, AI, game development, and systems programming.</p><p><strong>Current toolkit:</strong> HTML · Python · GDScript · C++ · TypeScript · Rust · CUDA</p><p><sub>I value curiosity, thoughtful collaboration, and making steady progress from an idea to a working project.</sub></p></td>
+<td width="38%" valign="top"><p><code>GITHUB ACTIVITY</code></p><p>Explore my repositories and contribution activity below.</p></td>
+</tr>
+</table>
+
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
+
+<h2>What I’m building</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/highlights?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&items=HTML%3A%3AWeb%20development%7CGDScript%3A%3AGame%20development%7CPython%3A%3AAI%20and%20automation&variant=wow&v=wow-highlights-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/highlights?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&items=HTML%3A%3AWeb%20development%7CGDScript%3A%3AGame%20development%7CPython%3A%3AAI%20and%20automation&variant=wow&v=wow-highlights-1&mode=dark" width="100%" alt="Abhinav Ravindra profile highlights: web development, game development, and AI" />
 </picture>
 
+<p align="center"><sub>A mix of experiments and larger projects, with plenty still to learn and improve.</sub></p>
 
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
+
+<h2>Tools I work with</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-stack-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/stack?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-stack-1&mode=dark" width="100%" alt="Abhinav Ravindra technology stack" />
+</picture>
+
+<p align="center"><sub>HTML · GDScript · Python · TypeScript · C++ · CSS · Rust · CUDA</sub></p>
+
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
+
+<h2>Selected projects</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&repos=ard12115%2FRecircle%2Card12115%2FJARVIS-Assistant%2Card12115%2FGR-racer%2Card12115%2FXeniaShaderOpt&variant=wow&v=wow-projects-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/projects?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&repos=ard12115%2FRecircle%2Card12115%2FJARVIS-Assistant%2Card12115%2FGR-racer%2Card12115%2FXeniaShaderOpt&variant=wow&v=wow-projects-1&mode=dark" width="100%" alt="Abhinav Ravindra selected projects" />
+</picture>
+
+<table width="100%">
+<tr>
+<td width="25%" valign="top"><p><strong><a href="https://github.com/ARD12115/Recircle">ReCircle</a></strong></p><p>A recycling assistant concept that combines image-based waste sorting with a digital twin and AI guidance to explore how individual choices affect a larger recycling system.</p><p><sub>Python · Computer vision · AI</sub></p></td>
+<td width="25%" valign="top"><p><strong><a href="https://github.com/ARD12115/JARVIS-Assistant">JARVIS Assistant</a></strong></p><p>A desktop AI assistant with multiple LLM backends, voice input and output, built-in tools, and persistent conversation memory.</p><p><sub>Python · React · TypeScript · Rust</sub></p></td>
+<td width="25%" valign="top"><p><strong><a href="https://github.com/ARD12115/GR-racer">GR Racer</a></strong></p><p>A Godot 4 arcade-racing project featuring arcade-style driving, a generated road and collision, and procedurally scattered world scenery.</p><p><sub>Godot 4 · GDScript</sub></p></td>
+<td width="25%" valign="top"><p><strong><a href="https://github.com/ARD12115/XeniaShaderOpt">XeniaShaderOpt</a></strong></p><p>An experimental optimization framework for Xenia Canary, exploring shader caching and CUDA-assisted hashing alongside frame-pacing and audio-sync systems.</p><p><sub>C++ · CUDA · Python</sub></p></td>
+</tr>
+</table>
+
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
+
+<h2>More projects and activity</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-stats-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/stats?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-stats-1&mode=dark" width="100%" alt="Abhinav Ravindra GitHub stats" />
+</picture>
+
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
+
+<h2>My contribution activity</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-heatmap-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/heatmap?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-heatmap-1&mode=dark" width="100%" alt="Abhinav Ravindra GitHub contribution activity" />
+</picture>
+
+<p align="center"><sub>Every contribution is part of the learning process—thanks for stopping by.</sub></p>
+
+<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>
 
 <div align="center">
-  <!---->
+<p><sub>LET’S BUILD SOMETHING USEFUL</sub></p>
+<h2>Thanks for visiting</h2>
+<p>I’m always glad to connect with people who enjoy making, learning, and sharing useful projects.</p>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-social-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/social?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-social-1&mode=dark" width="100%" alt="Abhinav Ravindra social links" />
+</picture>
+<p><a href="https://github.com/ard12115">GitHub</a></p>
+<p><sub>Abhinav Ravindra · Wow Profile generated with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
 </div>
