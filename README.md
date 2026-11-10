@@ -4,7 +4,9 @@
 <img src="https://i.pinimg.com/originals/42/b4/22/42b4229a9ec3145edaa895b2415dd720.gif" alt="Banner" width="100%" />
 
 ## 📌 About Me
-- 💡 <em>✏️ A sentence about you and what you do.</em>
+- 💡 <em>I'm a passionate developer who enjoys creating clean, scalable, and user-focused digital experiences. I love turning ideas into real products, solving problems with code, and continuously learning new technologies.</em>
+- 🚀 <em>My interests include full-stack development, frontend engineering, cloud tools, and building modern applications that are both functional and visually engaging.</em>
+- 🌱 <em>Currently exploring new concepts in web development, system design, and product-focused engineering while sharpening my problem-solving skills.</em>
 
 
 ## 📊 GitHub Stats & Trophies
