@@ -93,5 +93,4 @@
   <img src="https://www.gitskins.com/api/section/social?username=ard12115&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F159651738%3Fv%3D4&variant=wow&v=wow-social-1&mode=dark" width="100%" alt="Abhinav Ravindra social links" />
 </picture>
 <p><a href="https://github.com/ard12115">GitHub</a></p>
-<p><sub>Abhinav Ravindra · Wow Profile generated with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
 </div>
