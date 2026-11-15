@@ -16,9 +16,9 @@
 ### `~/runtime`
 
 <pre><code>ROLE     = Frontend / full-stack engineer
-FOCUS    = AI · web · game dev
+FOCUS    = AI · web · game dev · data pipelines
 STACK    = Python · TypeScript · C++
-           GDScript · Rust · CUDA
+           GDScript · Rust · CUDA · SQL
 MOTTO    = Build useful things,
            learn in public
 OPEN_TO  = collaboration · open source
@@ -32,29 +32,44 @@ STATUS   = shipping</code></pre>
 
 ## 🚀 Projects
 
+All public repositories, newest first. Forks are marked with ⑂.
+
 | Project | What it does | Stack |
 |---|---|---|
-| [**Recircle**](https://github.com/ARD12115/Recircle) | Recycling assistant: image-based waste sorting, a digital twin, and AI guidance | `Python` `Computer Vision` |
+| [**QFlow**](https://github.com/ARD12115/QFlow) ⑂ | Smart digital queue management: virtual tokens, live tracking, wait-time prediction, counter recommendations | `Flask` `Python` `SQLite` `JS` |
+| [**PulseCart**](https://github.com/ARD12115/PulseCart) | Storefront demo where Postgres owns inventory, a transactional outbox publishes to Kafka, and OpenSearch serves fuzzy search; atomic checkout race demo | `TypeScript` `Python` `Next.js` `Kafka` `PostgreSQL` `OpenSearch` |
+| [**Medical-Image-Enhancement**](https://github.com/ARD12115/Medical-Image-Enhancement-Project) | MedhaDrishti: brain & spine MRI enhancement (Autoencoder / ResNet18 transfer learning) and ROI segmentation for tumors, edema, lesions | `Python` `PyTorch` `OpenCV` |
+| [**ReliefNet**](https://github.com/ARD12115/ReliefNet) | Real-time disaster-relief coordination: matches camp surplus with unmet demand and recommends delivery routes via OSRM | `React` `Node.js` `MongoDB` `Socket.IO` |
+| [**Anuvada**](https://github.com/ARD12115/Anuvada-Kannada_English_Translator) | Kannada ↔ English translator for text, speech, and signboards (OCR + voice), built at CSE-HackSpark 2026 | `Python` `Streamlit` `Tesseract` |
+| [**SkillMatch**](https://github.com/ARD12115/Skillmatch) | Resume screening: pick a target role, get a match score plus the skills you have and are missing, with reasons | `Python` `NLP` `Embeddings` |
 | [**JARVIS-Assistant**](https://github.com/ARD12115/JARVIS-Assistant) | Desktop AI assistant with multiple LLM backends, voice I/O, built-in tools, and persistent memory | `Python` `React` `TypeScript` `Rust` |
-| [**GR-racer**](https://github.com/ARD12115/GR-racer) | Godot 4 arcade racer with generated roads, collisions, and procedural scenery | `Godot 4` `GDScript` |
+| [**Recircle**](https://github.com/ARD12115/Recircle) | Recycling assistant: image-based waste sorting, a campus digital twin, and grounded GenAI guidance | `Python` `Computer Vision` `GenAI` |
+| [**GR-racer**](https://github.com/ARD12115/GR-racer) | 2000s Black Box–style arcade racer in Godot 4: procedural roads, collisions, scenery; tuned for low-end PCs & Android | `Godot 4` `GDScript` `GLSL` |
 | [**XeniaShaderOpt**](https://github.com/ARD12115/XeniaShaderOpt) | Xenia Canary optimizer: shader caching, CUDA-assisted hashing, frame pacing, audio sync | `C++` `CUDA` `Python` |
+| [**skills**](https://github.com/ARD12115/skills) ⑂ | Skills for Real Engineers — straight from a .agents directory | `Markdown` |
+| [**cua**](https://github.com/ARD12115/cua) ⑂ | Computer-use 2.0: open-source drivers, cross-OS sandboxes, benchmarks for training/eval/data gen | `Python` |
+| [**superplane**](https://github.com/ARD12115/superplane) ⑂ | Open-source factory for one-shot engineering | `Go` |
+| [**Wand-Enhancer**](https://github.com/ARD12115/Wand-Enhancer) ⑂ | Advanced UX & interoperability extension for the Wand (WeMod) app | `C#` |
+| [**jailbreaks**](https://github.com/ARD12115/jailbreaks) ⑂ | A personal list of jailbreak experiments | — |
 
 <img src="https://raw.githubusercontent.com/ard12115/ard12115/main/assets/divider.svg" width="100%" alt="" />
 
 ## 🛠️ Toolkit
 
 ```bash
-ard12115@github:~$ toolbox --list
+ard12115@cybercore:~$ toolbox --list --source=all-repos
 ```
 
 | | |
 |---|---|
-| **Languages** | `Python` · `TypeScript` · `JavaScript` · `C++` · `Rust` · `HTML` · `CSS` · `GDScript` · `CUDA` |
-| **Frontend** | `React` · `Tailwind CSS` · `Vite` |
-| **Game dev** | `Godot 4` |
-| **Tools** | `Git` · `VS Code` · `Linux` |
+| **Languages** | `Python` · `TypeScript` · `JavaScript` · `C++` · `Rust` · `GDScript` · `CUDA` · `HTML` · `CSS` · `SQL` · `Shell` |
+| **Frontend** | `React` · `Next.js` · `Vite` · `Tailwind CSS` · `shadcn/ui` |
+| **AI / Data** | `LLM backends` · `Computer Vision` · `PyTorch` · `OpenCV` · `NLP / embeddings` · `GenAI` |
+| **Backend / Infra** | `Flask` · `Node.js` · `Express` · `PostgreSQL` · `MongoDB` · `SQLite` · `Kafka` · `OpenSearch` · `Socket.IO` · `Docker` · `GitHub Actions` |
+| **Game / Graphics** | `Godot 4` · `GLSL / GDShader` · `Xenia emulator` · `CUDA kernels` |
+| **Tools** | `Git` · `VS Code` · `Linux` · `PowerShell` |
 
-<img src="https://raw.githubusercontent.com/ard12115/ard12115/main/assets/languages.svg" width="100%" alt="Language mix across my repositories: HTML 40%, GDScript 28%, Python 17%, TypeScript 7%, C++ 4%" />
+<img src="https://raw.githubusercontent.com/ard12115/ard12115/main/assets/languages.svg" width="100%" alt="Language mix across my repositories: HTML 30%, Python 24%, GDScript 21%, JavaScript 11%, TypeScript 8%, C++ 3%, CSS 3%, Other 2%" />
 
 <div align="center">
 
