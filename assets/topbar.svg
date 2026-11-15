@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="86" viewBox="0 0 900 86">
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#131a28" stroke-width=".6"/></pattern>
+<linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#4cd7f6"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+<rect width="900" height="86" fill="#080a0f"/><rect width="900" height="86" fill="url(#g)"/>
+<rect x="0" y="0" width="900" height="40" fill="#0a0d14" stroke="#1e293b" stroke-opacity="1"/>
+<circle cx="30" cy="20" r="3.5" fill="#10b981"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
+<text x="42" y="24" fill="#e8ecf4" font-size="10" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="600" letter-spacing="0" text-anchor="start" >REF: SPEC-2026.04</text>
+<text x="150" y="24" fill="#8e95a5" font-size="10" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >| SYS_CORE // ARD12115</text>
+<text x="395" y="24" fill="#e8ecf4" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >00. OVERVIEW</text>
+<text x="487" y="24" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >01. VECTORS</text>
+<text x="567" y="24" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >02. REPOSITORIES</text>
+<text x="677" y="24" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >03. RUNTIME</text>
+<text x="757" y="24" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >04. DISPATCH</text>
+<rect x="395" y="37" width="82" height="2" fill="#4cd7f6"/><text x="870" y="24" fill="#10b981" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="end" >STATUS: ONLINE (NOMINAL)</text>
+<text x="30" y="66" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >SPEC DOC: ENG-SYS-PROFILE-26</text>
+<text x="290" y="66" fill="#4cd7f6" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >ID: ard12115</text>
+<text x="470" y="66" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >STANDARD: DIN / ISO-9241 TECHNICAL</text>
+<text x="870" y="66" fill="#10b981" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="end" >REVISION: v4.0.8 [LOCKED]</text>
+<line x1="30" y1="76" x2="870" y2="76" stroke="#1e293b"/></svg>
