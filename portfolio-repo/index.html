@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;background-color:#080a0f;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#4edea3","secondary":"#4cd7f6","secondary-fixed":"#acedff","outline":"#908fa0","surface-container":"#12161f","inverse-surface":"#e1e2ec","background":"#080a0f","primary-fixed-dim":"#c0c1ff","on-primary-fixed":"#07006c","on-tertiary-fixed":"#002113","primary-container":"#8083ff","on-secondary":"#003640","surface-bright":"#1e2330","on-surface-variant":"#8e95a5","on-tertiary":"#003824","on-primary-container":"#0d0096","on-tertiary-container":"#000703","primary-fixed":"#e1e0ff","on-secondary-fixed":"#001f26","surface":"#080a0f","outline-variant":"#1e2533","surface-dim":"#080a0f","on-surface":"#e8ecf4","error-container":"#93000a","inverse-primary":"#494bd6","secondary-container":"#03b5d3","tertiary-fixed":"#6ffbbe","on-error":"#690005","secondary-fixed-dim":"#4cd7f6","surface-variant":"#161c28","tertiary-container":"#00885d","primary":"#c0c1ff","inverse-on-surface":"#2d3038","on-error-container":"#ffdad6","surface-container-high":"#171d2a","on-background":"#e8ecf4","surface-container-lowest":"#040608","surface-container-highest":"#222a3a","surface-tint":"#c0c1ff","on-primary":"#1000a9","on-primary-fixed-variant":"#2f2ebe","surface-container-low":"#0d1117","on-secondary-fixed-variant":"#004e5c","tertiary":"#4edea3","on-secondary-container":"#00424e","error":"#ffb4ab","on-tertiary-fixed-variant":"#005236"},borderRadius:{DEFAULT:"0px",lg:"0px",xl:"0px",full:"0px"},fontFamily:{"headline-sm":["Inter"],"telemetry-data":["JetBrains Mono"],"headline-xl":["Inter"],"headline-xl-mobile":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"telemetry-micro":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"]}}}};</script></head><body class="bg-[#080a0f] font-body-md text-on-surface antialiased selection:bg-secondary/20 selection:text-secondary">
+<!-- TOP HEADER / SWISS SPEC DOCUMENT HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#080a0f]/90 backdrop-blur-md border-b border-outline-variant/60">
+<div class="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 bg-tertiary"></div>
+<div class="flex items-baseline gap-2 font-label-caps text-xs tracking-wider">
+<span class="text-on-surface font-semibold">REF: SPEC-2026.04</span>
+<span class="text-outline-variant">|</span>
+<span class="text-on-surface-variant font-normal">SYS_CORE // ARD12115</span>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-2 font-telemetry-micro text-[10px] text-on-surface-variant tracking-wider uppercase border-l border-outline-variant/60 pl-6">
+<span>CLASS: LEVEL-3 FULL-STACK</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-medium">NODE_PROD_PRIMARY</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center text-xs font-telemetry-data">
+<a class="px-3 py-1.5 text-on-surface border-b-2 border-secondary font-medium" href="#overview">00. OVERVIEW</a>
+<a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface transition-colors" href="#vectors">01. VECTORS</a>
+<a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface transition-colors" href="#catalog">02. REPOSITORIES</a>
+<a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface transition-colors" href="#runtime">03. RUNTIME</a>
+<a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface transition-colors" href="#protocol">04. DISPATCH</a>
+</nav>
+<div class="flex items-center gap-4 font-telemetry-micro text-xs">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="text-outline-variant">STATUS:</span>
+<span class="text-tertiary uppercase font-medium">ONLINE (NOMINAL)</span>
+</div>
+<div class="w-7 h-7 border border-outline-variant flex items-center justify-center bg-surface-container-low text-on-surface-variant text-[11px] font-telemetry-data">
+        ARD
+      </div>
+</div>
+</div>
+</header>
+<main class="w-full pt-14 bg-[#080a0f] text-on-surface">
+<div class="max-w-7xl mx-auto px-6 py-10 flex flex-col gap-16" id="overview">
+<!-- HERO SPEC SHEET SECTION -->
+<section class="border-b border-outline-variant/60 pb-12">
+<!-- Spec Document Metadata Header Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 border-t border-b border-outline-variant/60 py-2.5 font-telemetry-micro text-[11px] text-on-surface-variant mb-10 gap-y-2">
+<div><span class="text-outline-variant">SPEC DOC:</span> <span class="text-on-surface font-semibold">ENG-SYS-PROFILE-26</span></div>
+<div><span class="text-outline-variant">ID:</span> <span class="text-secondary font-telemetry-data">ard12115</span></div>
+<div><span class="text-outline-variant">STANDARD:</span> <span class="text-on-surface">DIN / ISO-9241 TECHNICAL</span></div>
+<div class="text-right"><span class="text-outline-variant">REVISION:</span> <span class="text-tertiary">v4.0.8 [LOCKED]</span></div>
+</div>
+<!-- Main Spec Hero Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Swiss Typography Authority -->
+<div class="lg:col-span-7 flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center gap-2 text-tertiary font-label-caps text-[11px] uppercase tracking-widest mb-3">
+<span class="inline-block w-1 h-1 bg-tertiary"></span>
+<span>ENGINEERING DOSSIER &amp; SPECIFICATION SHEET</span>
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-white uppercase leading-[1.05] font-headline-xl">
+              Abhinav<br/><span class="font-bold text-white">Ravindra</span>
+</h1>
+<div class="mt-4 flex items-center gap-3 text-secondary font-telemetry-data text-sm">
+<span class="text-outline-variant">//</span>
+<span class="tracking-wide uppercase font-semibold">Systems Architect &amp; Full-Stack Engineer</span>
+</div>
+<p class="mt-6 text-on-surface-variant font-normal leading-relaxed text-sm max-w-xl">
+              Specialized in low-overhead distributed systems, hardware-adjacent graphics runtimes, deep learning computer vision architectures, and resilient event-driven data streaming.
+            </p>
+<!-- Principle quotation -->
+<div class="mt-5 pl-3 border-l-2 border-outline-variant font-telemetry-data text-xs text-on-surface/80 italic">
+              "Build useful things, learn in public." — Core Principle [SPEC 0x01]
+            </div>
+</div>
+<!-- Precise Monospace Control Strip -->
+<div class="mt-10 pt-6 border-t border-outline-variant/40 flex flex-wrap items-center gap-3">
+<a class="px-4 py-2 bg-white text-[#080a0f] hover:bg-on-surface text-xs font-telemetry-data font-semibold tracking-wider uppercase transition-colors flex items-center gap-2" href="#catalog">
+<span>Inspect Specifications</span>
+<span class="material-symbols-outlined text-sm">arrow_downward</span>
+</a>
+<a class="px-4 py-2 border border-outline-variant hover:border-secondary hover:text-secondary text-xs font-telemetry-data uppercase tracking-wider text-on-surface transition-colors flex items-center gap-2" href="#protocol">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<span>Direct Dispatch</span>
+</a>
+<button class="px-4 py-2 border border-outline-variant hover:border-tertiary hover:text-tertiary text-xs font-telemetry-data uppercase tracking-wider text-on-surface-variant transition-colors flex items-center gap-2" onclick="toggleReadmeModal(true)">
+<span class="material-symbols-outlined text-sm">file_copy</span>
+<span>Export Raw Markdown</span>
+</button>
+</div>
+</div>
+<!-- Right: Technical Framing Box for 3D ASCII Avatar -->
+<div class="lg:col-span-5">
+<div class="border border-outline-variant/80 bg-surface-container-low/40 relative">
+<!-- Technical Corner Hairline Ticks -->
+<div class="absolute -top-[1px] -left-[1px] w-2 h-2 border-t-2 border-l-2 border-secondary"></div>
+<div class="absolute -top-[1px] -right-[1px] w-2 h-2 border-t-2 border-r-2 border-secondary"></div>
+<div class="absolute -bottom-[1px] -left-[1px] w-2 h-2 border-b-2 border-l-2 border-tertiary"></div>
+<div class="absolute -bottom-[1px] -right-[1px] w-2 h-2 border-b-2 border-r-2 border-tertiary"></div>
+<!-- Framing Technical Header -->
+<div class="flex items-center justify-between px-3 py-1.5 border-b border-outline-variant/60 font-telemetry-micro text-[10px] text-on-surface-variant uppercase">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+<span>FIG 1.0: VOLUMETRIC SCENE MATRIX</span>
+</div>
+<span class="font-telemetry-data text-secondary">60.0 FPS LOCKED</span>
+</div>
+<!-- 3D Avatar Viewport -->
+<div class="relative w-full h-[300px] flex items-center justify-center bg-[#05070a]">
+<!-- Axis Graticules -->
+<div class="absolute inset-0 pointer-events-none opacity-10 flex items-center justify-center">
+<div class="w-full h-[1px] bg-secondary"></div>
+<div class="h-full w-[1px] bg-secondary absolute"></div>
+</div>
+<!-- Interactive 3D WebGL Scene Component -->
+<!-- STITCH_THREEJS_START:ANIMATION_21 class="w-full h-full min-h-[220px] bg-transparent" -->
+<div class="w-full h-full min-h-[220px] bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_21" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_21');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // 3D Spinning ASCII / Matrix Holographic Mesh spelling ARD12115 / Dev Core
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || window.innerHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.z = 28;
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+container.appendChild(renderer.domElement);
+
+// Create a high-def 3D holographic structure (nested geodesic rings and point cloud matrix spelling / representing ARD12115)
+const group = new THREE.Group();
+scene.add(group);
+
+// 1. Core Sphere Particle Cloud
+const particleCount = 750;
+const particleGeometry = new THREE.BufferGeometry();
+const positions = new Float32Array(particleCount * 3);
+const colors = new Float32Array(particleCount * 3);
+
+const colorCyan = new THREE.Color(0x38bdf8); // Sky / Electric blue
+const colorIndigo = new THREE.Color(0x6366f1); // Indigo
+const colorEmerald = new THREE.Color(0x10b981); // Emerald / Neon terminal green
+
+for (let i = 0; i < particleCount; i++) {
+  const theta = THREE.MathUtils.randFloatSpread(360); 
+  const phi = THREE.MathUtils.randFloatSpread(360);
+
+  const radius = 6.8 + Math.random() * 2.2;
+  const x = radius * Math.sin(theta) * Math.cos(phi);
+  const y = radius * Math.sin(theta) * Math.sin(phi);
+  const z = radius * Math.cos(theta);
+
+  positions[i * 3] = x;
+  positions[i * 3 + 1] = y;
+  positions[i * 3 + 2] = z;
+
+  // Mix between high-tech palette
+  const mixedColor = Math.random() > 0.5 ? colorCyan.clone().lerp(colorIndigo, Math.random()) : colorEmerald;
+  colors[i * 3] = mixedColor.r;
+  colors[i * 3 + 1] = mixedColor.g;
+  colors[i * 3 + 2] = mixedColor.b;
+}
+
+particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+particleGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+const particleMaterial = new THREE.PointsMaterial({
+  size: 0.38,
+  vertexColors: true,
+  transparent: true,
+  opacity: 0.88,
+  blending: THREE.AdditiveBlending
+});
+
+const particleSystem = new THREE.Points(particleGeometry, particleMaterial);
+group.add(particleSystem);
+
+// 2. Wireframe Icosahedron (Geometric cage reminiscent of Bauhaus & systems architectures)
+const icosaGeometry = new THREE.IcosahedronGeometry(7.5, 1);
+const wireframeMaterial = new THREE.MeshBasicMaterial({
+  color: 0x6366f1,
+  wireframe: true,
+  transparent: true,
+  opacity: 0.45
+});
+const icosaMesh = new THREE.Mesh(icosaGeometry, wireframeMaterial);
+group.add(icosaMesh);
+
+// 3. Inner Cybernetic Ring & Monogram Core
+const ringGeometry = new THREE.TorusGeometry(8.8, 0.08, 16, 100);
+const ringMaterial = new THREE.MeshBasicMaterial({
+  color: 0x38bdf8,
+  transparent: true,
+  opacity: 0.65
+});
+const ring1 = new THREE.Mesh(ringGeometry, ringMaterial);
+ring1.rotation.x = Math.PI / 3;
+group.add(ring1);
+
+const ring2 = new THREE.Mesh(ringGeometry, ringMaterial.clone());
+ring2.material.color = new THREE.Color(0x10b981);
+ring2.rotation.y = Math.PI / 3;
+group.add(ring2);
+
+// 4. Floating Ascii / Code Text nodes inside the matrix
+const canvasText = document.createElement('canvas');
+canvasText.width = 512;
+canvasText.height = 512;
+const ctx = canvasText.getContext('2d');
+ctx.fillStyle = 'transparent';
+ctx.fillRect(0, 0, 512, 512);
+ctx.font = 'bold 58px monospace';
+ctx.fillStyle = '#38bdf8';
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.fillText('ARD12115', 256, 210);
+ctx.font = '24px monospace';
+ctx.fillStyle = '#10b981';
+ctx.fillText('~/runtime: OK', 256, 275);
+ctx.fillStyle = '#a5b4fc';
+ctx.fillText('01000001 01010010', 256, 320);
+
+const textTexture = new THREE.CanvasTexture(canvasText);
+const textPlaneGeo = new THREE.PlaneGeometry(8, 8);
+const textMaterial = new THREE.MeshBasicMaterial({
+  map: textTexture,
+  transparent: true,
+  opacity: 0.95,
+  side: THREE.DoubleSide
+});
+const textMesh = new THREE.Mesh(textPlaneGeo, textMaterial);
+group.add(textMesh);
+
+// Interactive mouse interaction
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+const onMouseMove = (event) => {
+  const rect = container.getBoundingClientRect();
+  mouseX = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+  mouseY = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+};
+
+window.addEventListener('mousemove', onMouseMove);
+
+const onResize = () => {
+  const w = container.clientWidth || window.innerWidth;
+  const h = container.clientHeight || window.innerHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+};
+window.addEventListener('resize', onResize);
+
+// Animation Loop
+let clock = new THREE.Clock();
+let animId;
+
+const animate = () => {
+  animId = requestAnimationFrame(animate);
+  const elapsedTime = clock.getElapsedTime();
+
+  targetX = mouseX * 0.5;
+  targetY = mouseY * 0.5;
+
+  group.rotation.y += 0.012;
+  group.rotation.x += 0.006;
+  group.rotation.x += (targetY - group.rotation.x * 0.1) * 0.05;
+  group.rotation.y += (targetX - group.rotation.y * 0.1) * 0.05;
+
+  ring1.rotation.z = elapsedTime * 0.4;
+  ring2.rotation.z = -elapsedTime * 0.35;
+  textMesh.lookAt(camera.position);
+
+  renderer.render(scene, camera);
+};
+
+animate();
+
+// Clean up function if container is destroyed
+return () => {
+  cancelAnimationFrame(animId);
+  window.removeEventListener('mousemove', onMouseMove);
+  window.removeEventListener('resize', onResize);
+  renderer.dispose();
+  particleGeometry.dispose();
+  particleMaterial.dispose();
+  icosaGeometry.dispose();
+  wireframeMaterial.dispose();
+  ringGeometry.dispose();
+  ringMaterial.dispose();
+  textTexture.dispose();
+  textPlaneGeo.dispose();
+  textMaterial.dispose();
+};
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_21 -->
+<!-- Technical Overlay Readouts -->
+<div class="absolute top-2 left-2 pointer-events-none font-telemetry-micro text-[9px] text-outline tracking-tight leading-3">
+                ORIGIN: [0.00, 0.00, 0.00]<br/>
+                FOV: 45° // RAD: 1.62m
+              </div>
+<div class="absolute bottom-2 right-2 pointer-events-none font-telemetry-micro text-[9px] text-tertiary text-right tracking-tight leading-3">
+                BUFFER: SHADER_PASS_OK<br/>
+                GEO_SEED: 0x415244
+              </div>
+</div>
+<!-- Technical Framing Footer -->
+<div class="px-3 py-2 border-t border-outline-variant/60 flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant bg-surface-container-low/80">
+<span class="tracking-wide text-on-surface">INTERACTION: CLICK + DRAG ORBIT</span>
+<span class="text-outline-variant font-telemetry-data">[PROJECTION: ORTHO-SYM]</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Precision Key-Value Telemetry Bar (Swiss Spec Table Grid) -->
+<div class="mt-10 border border-outline-variant/60 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 divide-x divide-y lg:divide-y-0 divide-outline-variant/60 font-telemetry-micro">
+<div class="p-3 bg-surface-container-low/20">
+<div class="text-[10px] text-outline-variant uppercase">SYSTEM ROLE</div>
+<div class="text-xs text-on-surface font-semibold font-telemetry-data mt-1">Full-Stack Core</div>
+<div class="text-[9px] text-on-surface-variant mt-0.5">Tier 1 Runtime</div>
+</div>
+<div class="p-3 bg-surface-container-low/20">
+<div class="text-[10px] text-outline-variant uppercase">PRIMARY DOMAIN</div>
+<div class="text-xs text-on-surface font-semibold font-telemetry-data mt-1">AI · Cloud · Graphics</div>
+<div class="text-[9px] text-on-surface-variant mt-0.5">3 Tracks Active</div>
+</div>
+<div class="p-3 bg-surface-container-low/20">
+<div class="text-[10px] text-outline-variant uppercase">LATENCY AVERAGE</div>
+<div class="text-xs text-tertiary font-semibold font-telemetry-data mt-1">12.0 ms (NOMINAL)</div>
+<div class="text-[9px] text-on-surface-variant mt-0.5">99.9th percentile</div>
+</div>
+<div class="p-3 bg-surface-container-low/20">
+<div class="text-[10px] text-outline-variant uppercase">SYSTEM AVAILABILITY</div>
+<div class="text-xs text-tertiary font-semibold font-telemetry-data mt-1">99.98% SLA</div>
+<div class="text-[9px] text-on-surface-variant mt-0.5">Year-to-date MTBF</div>
+</div>
+<div class="p-3 bg-surface-container-low/20">
+<div class="text-[10px] text-outline-variant uppercase">CORE LANGUAGE ENGINE</div>
+<div class="text-xs text-secondary font-semibold font-telemetry-data mt-1">Py · TS · C++ · GD</div>
+<div class="text-[9px] text-on-surface-variant mt-0.5">Polylingual Node</div>
+</div>
+<div class="p-3 bg-surface-container-low/20">
+<div class="text-[10px] text-outline-variant uppercase">ACTIVE REPOSITORIES</div>
+<div class="text-xs text-primary font-semibold font-telemetry-data mt-1">9 AUDITED SPECS</div>
+<div class="text-[9px] text-on-surface-variant mt-0.5">All passing CI/CD</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: ARCHITECTURAL VECTORS (3 Tracks unboxed tabular matrix) -->
+<section class="flex flex-col gap-6" id="vectors">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-outline-variant/60 pb-3">
+<div class="flex items-baseline gap-3">
+<span class="font-telemetry-data text-xs text-secondary font-semibold">SECTION 01.0</span>
+<h2 class="font-headline-md text-lg text-white uppercase tracking-tight font-medium">Architectural Vectors &amp; Engineering Disciplines</h2>
+</div>
+<span class="font-telemetry-micro text-[11px] text-on-surface-variant uppercase">[ISO DOMAIN TAXONOMY // 3 VECTORS]</span>
+</div>
+<!-- 3-Column Spec Matrix with vertical hairline dividing rules -->
+<div class="grid grid-cols-1 md:grid-cols-3 border-y border-outline-variant/60 divide-y md:divide-y-0 md:divide-x divide-outline-variant/60">
+<!-- Vector 01 -->
+<div class="py-6 md:pr-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs font-telemetry-micro text-outline-variant uppercase mb-3">
+<span>VECTOR 01 // VEC_VISION_AI</span>
+<span class="text-tertiary">STABLE</span>
+</div>
+<h3 class="text-base font-semibold text-white uppercase tracking-wide font-headline-sm">AI &amp; Computer Vision</h3>
+<p class="mt-3 text-xs text-on-surface-variant leading-relaxed font-body-sm">
+              Medical imaging reconstruction, anatomical ROI lesion segmentation, deep residual transfer models (ResNet18), and persistent multi-agent LLM orchestrators with state graphs.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 font-telemetry-micro text-[11px] flex flex-col gap-1.5">
+<div class="flex justify-between text-on-surface-variant">
+<span>FRAMEWORKS:</span>
+<span class="text-on-surface font-telemetry-data">PyTorch, TorchVision, OpenCV</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>TARGETS:</span>
+<span class="text-tertiary font-telemetry-data">ResNet, UNet, Autoencoders</span>
+</div>
+</div>
+</div>
+<!-- Vector 02 -->
+<div class="py-6 md:px-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs font-telemetry-micro text-outline-variant uppercase mb-3">
+<span>VECTOR 02 // VEC_CLOUD_DIST</span>
+<span class="text-secondary">STABLE</span>
+</div>
+<h3 class="text-base font-semibold text-white uppercase tracking-wide font-headline-sm">Distributed Systems &amp; Cloud</h3>
+<p class="mt-3 text-xs text-on-surface-variant leading-relaxed font-body-sm">
+              Strict Postgres atomic transactional outboxes, high-throughput Apache Kafka streaming, OpenSearch fuzzy indexing layers, and bidirectional low-overhead WebSocket pipelines.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 font-telemetry-micro text-[11px] flex flex-col gap-1.5">
+<div class="flex justify-between text-on-surface-variant">
+<span>INFRASTRUCTURE:</span>
+<span class="text-on-surface font-telemetry-data">Kafka, PostgreSQL, Redis</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>CONCURRENCY:</span>
+<span class="text-secondary font-telemetry-data">ACID Isolation, 0% Outbox Loss</span>
+</div>
+</div>
+</div>
+<!-- Vector 03 -->
+<div class="py-6 md:pl-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs font-telemetry-micro text-outline-variant uppercase mb-3">
+<span>VECTOR 03 // VEC_LOW_GRAPH</span>
+<span class="text-primary">ACTIVE</span>
+</div>
+<h3 class="text-base font-semibold text-white uppercase tracking-wide font-headline-sm">Game Tech &amp; Low-Level Graphics</h3>
+<p class="mt-3 text-xs text-on-surface-variant leading-relaxed font-body-sm">
+              Custom GLSL/GDShader graphics pipelines, algorithmic terrain generation, CUDA GPU hashing memory caches, and emulator microsecond translation pacing.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 font-telemetry-micro text-[11px] flex flex-col gap-1.5">
+<div class="flex justify-between text-on-surface-variant">
+<span>PIPELINE:</span>
+<span class="text-on-surface font-telemetry-data">Godot 4, C++, GLSL, CUDA</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>FRAME LATENCY:</span>
+<span class="text-primary font-telemetry-data">16.1ms Fixed (60Hz Locked)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: PRODUCTION SPECIFICATIONS CATALOG (All 9 Repositories in High-Density Spec Table) -->
+<section class="flex flex-col gap-6" id="catalog">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant/60 pb-3 gap-4">
+<div>
+<div class="flex items-baseline gap-3">
+<span class="font-telemetry-data text-xs text-secondary font-semibold">SECTION 02.0</span>
+<h2 class="font-headline-md text-lg text-white uppercase tracking-tight font-medium">Production Repositories &amp; Engineering Specifications</h2>
+</div>
+<p class="text-xs text-on-surface-variant mt-1 font-body-sm">Standardized itemized catalog of verified operational software systems.</p>
+</div>
+<!-- Category Spec Selector -->
+<div class="flex items-center font-telemetry-micro text-[11px] border border-outline-variant/80 divide-x divide-outline-variant/80">
+<button class="filter-tab px-3 py-1 bg-white text-[#080a0f] font-semibold transition-colors" data-cat="all" onclick="filterCategory('all')">ALL [9]</button>
+<button class="filter-tab px-3 py-1 text-on-surface-variant hover:text-white transition-colors" data-cat="ai" onclick="filterCategory('ai')">AI/VISION [5]</button>
+<button class="filter-tab px-3 py-1 text-on-surface-variant hover:text-white transition-colors" data-cat="cloud" onclick="filterCategory('cloud')">DISTRIBUTED [2]</button>
+<button class="filter-tab px-3 py-1 text-on-surface-variant hover:text-white transition-colors" data-cat="game" onclick="filterCategory('game')">GRAPHICS [2]</button>
+</div>
+</div>
+<!-- Swiss Spec Table Container -->
+<div class="border border-outline-variant/60 w-full overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[850px]">
+<thead>
+<tr class="border-b border-outline-variant/60 bg-surface-container-low font-telemetry-micro text-[11px] text-outline uppercase tracking-wider">
+<th class="py-2.5 px-4 font-normal w-24">SPEC ID</th>
+<th class="py-2.5 px-4 font-normal w-48">SYSTEM NAME</th>
+<th class="py-2.5 px-4 font-normal">TECHNICAL SUMMARY &amp; ARCHITECTURE</th>
+<th class="py-2.5 px-4 font-normal w-40">PRIMARY STACK</th>
+<th class="py-2.5 px-4 font-normal w-48">BENCHMARK / METRIC</th>
+<th class="py-2.5 px-4 font-normal text-right w-24">SOURCE</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/40 font-telemetry-data text-xs" id="spec-table-body">
+<!-- SPEC_01 PulseCart -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="cloud">
+<td class="py-4 px-4 text-secondary font-semibold align-top">SPEC_01</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">PulseCart</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">DISTRIBUTED STOREFRONT</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Postgres strict inventory locks, Transactional Outbox publishing state events to Apache Kafka, and OpenSearch for high-speed fuzzy querying with race-condition checkout mitigation.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                TS · Kafka · Postgres · Next.js
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>OUTBOX LOSS:</span>
+<span class="text-tertiary font-semibold">0.00%</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_02 ReliefNet -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="cloud">
+<td class="py-4 px-4 text-secondary font-semibold align-top">SPEC_02</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">ReliefNet</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">DISASTER LOGISTICS</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Dynamic resource allocation system calculating optimal relief dispatch routes via Open Source Routing Machine (OSRM) engine with bi-directional socket telemetry.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                React · Node.js · Mongo · Socket.IO
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>DISPATCH SPEED:</span>
+<span class="text-secondary font-semibold">&lt; 18.0 ms</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-secondary w-[88%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_03 MedhaDrishti -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="ai">
+<td class="py-4 px-4 text-tertiary font-semibold align-top">SPEC_03</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">MedhaDrishti</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">MRI NEURAL ENHANCE</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Brain and spine MRI reconstruction utilizing deep convolutional autoencoders and ResNet18 transfer learning; automated ROI segmentation for lesion &amp; edema demarcation.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                Python · PyTorch · OpenCV
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>DICE SCORE:</span>
+<span class="text-tertiary font-semibold">0.932 DSC</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-tertiary w-[93%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_04 Anuvada -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="ai">
+<td class="py-4 px-4 text-tertiary font-semibold align-top">SPEC_04</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">Anuvada</div>
+<div class="text-[10px] text-tertiary font-telemetry-micro uppercase mt-0.5">AWARD WINNER '26</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Kannada ↔ English multimodal pipeline for text, voice, and real-world signboards via optical character recognition and acoustic synthesis. CSE-HackSpark Award.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                Python · Tesseract · Streamlit
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>OCR ACCURACY:</span>
+<span class="text-tertiary font-semibold">96.4%</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-tertiary w-[96%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_05 SkillMatch -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="ai">
+<td class="py-4 px-4 text-tertiary font-semibold align-top">SPEC_05</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">SkillMatch</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">SEMANTIC RESUME PARSER</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Automated engineering resume matching engine with multidimensional vector embeddings, cosine distance scoring, and missing qualification attribution.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                Python · NLP · Vector Embeddings
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>COSINE ACCURACY:</span>
+<span class="text-tertiary font-semibold">0.910 SIM</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-tertiary w-[91%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_06 JARVIS -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="ai">
+<td class="py-4 px-4 text-tertiary font-semibold align-top">SPEC_06</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">JARVIS-Assistant</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">MULTI-LLM DAEMON</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Autonomous desktop personal assistant coordinating multiple localized and remote LLM models, duplex audio stream synthesis, and shell tool routing.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                Python · Rust · React · TS
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>ROUTER DIVERSITY:</span>
+<span class="text-tertiary font-semibold">4 MODELS</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-tertiary w-[85%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_07 Recircle -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="ai">
+<td class="py-4 px-4 text-tertiary font-semibold align-top">SPEC_07</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">Recircle</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">EDGE CV / DIGITAL TWIN</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                Edge-device real-time recyclable waste classifier linked to interactive spatial 3D campus digital twin and grounded material handling AI.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                Python · Vision · GenAI
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>EDGE INFERENCE:</span>
+<span class="text-tertiary font-semibold">42.0 FPS</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-tertiary w-[80%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_08 GR-racer -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="game">
+<td class="py-4 px-4 text-primary font-semibold align-top">SPEC_08</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">GR-racer</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">ARCADE PHYSICS ENGINE</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-body-sm text-xs align-top leading-relaxed">
+                2000s arcade vehicular simulator in Godot 4: algorithmic road generation, custom rigid-body collision math, and GLSL shading pipelines targeting low-power hardware.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                Godot 4 · GDScript · GLSL
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>FRAME PACING:</span>
+<span class="text-primary font-semibold">16.1 ms (60Hz)</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-primary w-[99%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- SPEC_09 XeniaShaderOpt -->
+<tr class="project-row hover:bg-surface-container-low/50 transition-colors" data-category="game">
+<td class="py-4 px-4 text-primary font-semibold align-top">SPEC_09</td>
+<td class="py-4 px-4 align-top">
+<div class="font-semibold text-white text-sm">XeniaShaderOpt</div>
+<div class="text-[10px] text-on-surface-variant font-telemetry-micro uppercase mt-0.5">CUDA ACCELERATION CORE</div>
+</td>
+<td class="py-4 px-4 align-top text-on-surface-variant font-body-sm text-xs leading-relaxed">
+                Xenia Canary emulator subsystem: pre-compiled shader caching, CUDA-assisted pipeline hashing, microsecond frame pacing, and low-drift audio synchronization loops.
+              </td>
+<td class="py-4 px-4 align-top font-telemetry-micro text-[11px] text-on-surface">
+                C++ · CUDA · Python
+              </td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center justify-between font-telemetry-micro text-[10px] text-on-surface-variant mb-1">
+<span>STUTTER REDUCTION:</span>
+<span class="text-primary font-semibold">-74.2%</span>
+</div>
+<div class="w-full h-1 bg-outline-variant/40">
+<div class="h-full bg-primary w-[74%]"></div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right font-telemetry-micro text-xs">
+<a class="text-secondary hover:underline inline-flex items-center gap-1" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<span>SRC</span><span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- SECTION 3: SYSTEM RUNTIME & LANGUAGE COMPOSITION -->
+<section class="flex flex-col gap-6" id="runtime">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-outline-variant/60 pb-3">
+<div class="flex items-baseline gap-3">
+<span class="font-telemetry-data text-xs text-secondary font-semibold">SECTION 03.0</span>
+<h2 class="font-headline-md text-lg text-white uppercase tracking-tight font-medium">System Runtime &amp; Language Composition</h2>
+</div>
+<span class="font-telemetry-micro text-[11px] text-on-surface-variant uppercase">[AUDITED REPOSITORY COMMIT VOLUME]</span>
+</div>
+<!-- Language Spec Table & Composition Bar -->
+<div class="border border-outline-variant/60 p-6 flex flex-col gap-6">
+<!-- Segmented Gauging Line -->
+<div>
+<div class="flex items-center justify-between text-xs font-telemetry-micro text-on-surface-variant mb-2">
+<span>STATIC CODE VOLUME ALLOCATION</span>
+<span class="text-white">100.0% AGGREGATE</span>
+</div>
+<div class="w-full h-2 bg-surface-container flex overflow-hidden">
+<div class="bg-primary h-full" style="width: 30%;" title="HTML (30%)"></div>
+<div class="bg-tertiary h-full" style="width: 24%;" title="Python (24%)"></div>
+<div class="bg-secondary h-full" style="width: 21%;" title="GDScript (21%)"></div>
+<div class="bg-primary-container h-full" style="width: 11%;" title="JavaScript (11%)"></div>
+<div class="bg-secondary-fixed h-full" style="width: 8%;" title="TypeScript (8%)"></div>
+<div class="bg-outline h-full" style="width: 3%;" title="C++ / CUDA (3%)"></div>
+<div class="bg-outline-variant h-full" style="width: 3%;" title="Other (3%)"></div>
+</div>
+</div>
+<!-- Strict Spec Grid for Languages -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 font-telemetry-micro text-xs">
+<div class="p-3 border border-outline-variant/60">
+<div class="text-outline-variant text-[10px]">HTML / UI</div>
+<div class="text-sm font-semibold text-white mt-1">30.0%</div>
+<div class="text-[10px] text-primary mt-0.5">Semantic Web Core</div>
+</div>
+<div class="p-3 border border-outline-variant/60">
+<div class="text-outline-variant text-[10px]">PYTHON</div>
+<div class="text-sm font-semibold text-white mt-1">24.0%</div>
+<div class="text-[10px] text-tertiary mt-0.5">PyTorch · ML Pipelines</div>
+</div>
+<div class="p-3 border border-outline-variant/60">
+<div class="text-outline-variant text-[10px]">GDSCRIPT</div>
+<div class="text-sm font-semibold text-white mt-1">21.0%</div>
+<div class="text-[10px] text-secondary mt-0.5">Godot 4 Mechanics</div>
+</div>
+<div class="p-3 border border-outline-variant/60">
+<div class="text-outline-variant text-[10px]">JAVASCRIPT</div>
+<div class="text-sm font-semibold text-white mt-1">11.0%</div>
+<div class="text-[10px] text-on-surface-variant mt-0.5">Client Runtime</div>
+</div>
+<div class="p-3 border border-outline-variant/60">
+<div class="text-outline-variant text-[10px]">TYPESCRIPT</div>
+<div class="text-sm font-semibold text-white mt-1">8.0%</div>
+<div class="text-[10px] text-secondary-fixed mt-0.5">Type-safe Services</div>
+</div>
+<div class="p-3 border border-outline-variant/60">
+<div class="text-outline-variant text-[10px]">C++ / CUDA</div>
+<div class="text-sm font-semibold text-white mt-1">3.0%</div>
+<div class="text-[10px] text-outline mt-0.5">Hardware Kernels</div>
+</div>
+</div>
+<!-- System Dependencies 4-Column Table -->
+<div class="border-t border-outline-variant/60 pt-4 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs font-telemetry-micro">
+<div>
+<span class="text-outline-variant uppercase text-[10px] block mb-1">FRONTEND ECOSYSTEM</span>
+<span class="text-on-surface">React, Next.js, Vite, Tailwind CSS, shadcn/ui</span>
+</div>
+<div>
+<span class="text-outline-variant uppercase text-[10px] block mb-1">AI / VISION ECOSYSTEM</span>
+<span class="text-on-surface">PyTorch, OpenCV, ResNet18, LLM Tooling</span>
+</div>
+<div>
+<span class="text-outline-variant uppercase text-[10px] block mb-1">DATA &amp; INFRASTRUCTURE</span>
+<span class="text-on-surface">PostgreSQL, Apache Kafka, OpenSearch, Docker</span>
+</div>
+<div>
+<span class="text-outline-variant uppercase text-[10px] block mb-1">GRAPHICS &amp; ENGINE</span>
+<span class="text-on-surface">Godot 4, GLSL / GDShader, CUDA, Linux</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PROTOCOL & DISPATCH TERMINAL -->
+<section class="flex flex-col gap-6" id="protocol">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-outline-variant/60 pb-3">
+<div class="flex items-baseline gap-3">
+<span class="font-telemetry-data text-xs text-secondary font-semibold">SECTION 04.0</span>
+<h2 class="font-headline-md text-lg text-white uppercase tracking-tight font-medium">Protocol &amp; Dispatch Terminal</h2>
+</div>
+<span class="font-telemetry-micro text-[11px] text-tertiary uppercase">[COMMUNICATION CHANNEL READY]</span>
+</div>
+<!-- Minimalist Monospace Spec Terminal Window -->
+<div class="border border-outline-variant/80 bg-surface-container-low/40 p-6 flex flex-col gap-6 font-telemetry-data">
+<div class="flex items-center justify-between border-b border-outline-variant/60 pb-3 text-xs text-on-surface-variant font-telemetry-micro">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-tertiary"></span>
+<span class="text-white font-medium">SHELL: ard12115@syscore.net</span>
+</div>
+<span class="text-outline-variant">PORT: 443 // TLS 1.3 // LAT: 42.3601 N, LON: 71.0589 W</span>
+</div>
+<!-- Terminal Stream Output -->
+<div class="text-xs text-on-surface-variant space-y-1.5 leading-relaxed">
+<p><span class="text-tertiary font-semibold">ard12115@syscore:~$</span> ./dispatch --collaborate --target="abhinav"</p>
+<p class="text-outline-variant">[HANDSHAKE] Handshake established with Abhinav Ravindra.</p>
+<p class="text-secondary">[OK] Active vectors: AI &amp; Vision, Distributed Kafka Pipelines, Godot 4 Physics.</p>
+<p class="text-white">&gt; Selected communication protocols available below:</p>
+</div>
+<!-- Precise Action Trigger Links -->
+<div class="grid grid-cols-1 md:grid-cols-3 border border-outline-variant/60 divide-y md:divide-y-0 md:divide-x divide-outline-variant/60 font-telemetry-micro">
+<a class="p-4 hover:bg-surface-container-low transition-colors flex flex-col justify-between group" href="https://github.com/ard12115" rel="noopener noreferrer" target="_blank">
+<div>
+<span class="text-[10px] text-outline-variant uppercase">PROTOCOL 01</span>
+<div class="text-sm font-semibold text-white group-hover:text-secondary mt-1 flex items-center justify-between">
+<span>GitHub Registry</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-2 font-body-sm">Browse 9 public production repositories and commit history.</p>
+</div>
+<div class="mt-4 text-[10px] text-secondary font-telemetry-data">@ard12115</div>
+</a>
+<a class="p-4 hover:bg-surface-container-low transition-colors flex flex-col justify-between group" href="mailto:contact@abhinavravindra.dev">
+<div>
+<span class="text-[10px] text-outline-variant uppercase">PROTOCOL 02</span>
+<div class="text-sm font-semibold text-white group-hover:text-tertiary mt-1 flex items-center justify-between">
+<span>Direct Dispatch</span>
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-2 font-body-sm">Send engineering inquiries or collaboration proposals.</p>
+</div>
+<div class="mt-4 text-[10px] text-tertiary font-telemetry-data">contact@abhinavravindra.dev</div>
+</a>
+<button class="p-4 hover:bg-surface-container-low transition-colors text-left flex flex-col justify-between group" onclick="toggleReadmeModal(true)">
+<div>
+<span class="text-[10px] text-outline-variant uppercase">PROTOCOL 03</span>
+<div class="text-sm font-semibold text-white group-hover:text-primary mt-1 flex items-center justify-between">
+<span>Export Profile Spec</span>
+<span class="material-symbols-outlined text-sm">download</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-2 font-body-sm">Copy raw Markdown technical spec sheet to clipboard.</p>
+</div>
+<div class="mt-4 text-[10px] text-primary font-telemetry-data">PROFILE_SPECS.md</div>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- POPUP MODAL: MARKDOWN RAW SPEC EXPORT (Swiss Industrial Modal) -->
+<div class="hidden fixed inset-0 z-50 bg-[#080a0f]/85 backdrop-blur-sm flex items-center justify-center p-6" id="readme-modal">
+<div class="bg-[#080a0f] border border-outline-variant/80 max-w-3xl w-full flex flex-col max-h-[85vh]">
+<!-- Header -->
+<div class="flex items-center justify-between px-4 py-3 border-b border-outline-variant/60 font-telemetry-micro text-xs">
+<div class="flex items-center gap-2 text-white">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+<span class="font-semibold uppercase tracking-wider">DOC // PROFILE_SPECS.md</span>
+</div>
+<button class="text-on-surface-variant hover:text-white" onclick="toggleReadmeModal(false)">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<!-- Textarea Basin -->
+<div class="p-4 flex flex-col gap-2">
+<span class="font-telemetry-micro text-[10px] text-outline-variant uppercase">RAW MARKDOWN SPECIFICATION TEXT</span>
+<textarea class="w-full h-80 bg-surface-container-low border border-outline-variant/40 text-tertiary font-telemetry-data text-[11px] p-3 resize-none focus:outline-none" id="markdown-snippet" readonly="">### Abhinav Ravindra (@ard12115) — Technical Specification Sheet
+**Systems Architect &amp; Full-Stack Engineer**
+*"Build useful things, learn in public"*
+
+---
+
+#### 🟢 CORE TELEMETRY
+- Role: Full-Stack Engineer / Systems Architect
+- Focus: AI · Cloud · Graphics · Distributed Streaming
+- Active Engines: Python, TypeScript, C++, GDScript, Rust, CUDA
+- Availability MTBF: 99.98%
+
+---
+
+#### 🛠️ PRODUCTION REPOSITORY SPECIFICATIONS
+1. SPEC_01 PulseCart: Postgres inventory locks, Kafka Transactional Outbox, OpenSearch fuzzy index.
+2. SPEC_02 ReliefNet: Disaster resource allocation with dynamic OSRM shortest-path vehicle routing.
+3. SPEC_03 MedhaDrishti: MRI enhancement deep autoencoders + ResNet18 ROI lesion segmentation.
+4. SPEC_04 Anuvada: Multimodal Kannada ↔ English OCR translation engine (CSE-HackSpark '26 Winner).
+5. SPEC_05 SkillMatch: Contextual resume parser using vector embeddings and cosine distance.
+6. SPEC_06 JARVIS-Assistant: Multi-LLM desktop orchestration daemon with duplex voice I/O.
+7. SPEC_07 Recircle: Real-time edge CV waste classifier with spatial campus digital twin.
+8. SPEC_08 GR-racer: 2000s arcade vehicular simulator in Godot 4 with procedural roadways &amp; GLSL.
+9. SPEC_09 XeniaShaderOpt: CUDA-assisted pipeline hashing &amp; shader caching for Xenia Canary.
+
+---
+
+#### 📬 CONTACT / DISPATCH
+- GitHub: https://github.com/ard12115
+- Coordinates: LAT 42.3601 N, LON 71.0589 W</textarea>
+</div>
+<!-- Footer -->
+<div class="flex items-center justify-between px-4 py-3 border-t border-outline-variant/60 font-telemetry-micro text-xs bg-surface-container-low/40">
+<span class="text-tertiary" id="copy-status">CLICK TO COPY SPECIFICATION</span>
+<div class="flex gap-2">
+<button class="px-4 py-1.5 bg-white text-[#080a0f] hover:bg-on-surface font-semibold uppercase text-[11px] tracking-wider transition-colors" onclick="copyReadmeText()">
+            Copy Markdown
+          </button>
+<button class="px-4 py-1.5 border border-outline-variant hover:border-white text-on-surface-variant hover:text-white uppercase text-[11px] tracking-wider" onclick="toggleReadmeModal(false)">
+            Close
+          </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- INDUSTRIAL MINIMAL FOOTER -->
+<footer class="w-full border-t border-outline-variant/60 py-10 bg-[#080a0f]">
+<div class="max-w-7xl mx-auto px-6 flex flex-col gap-6 font-telemetry-micro text-xs">
+<div class="flex flex-col md:flex-row md:items-center justify-between border-b border-outline-variant/40 pb-6 gap-4">
+<div>
+<div class="text-white font-semibold tracking-wider uppercase text-sm">ABHINAV RAVINDRA // TECHNICAL PORTFOLIO</div>
+<p class="text-on-surface-variant font-body-sm text-xs mt-1">International typographic spec sheet layout. No telemetry tracking cookies deployed.</p>
+</div>
+<div class="flex items-center gap-6 font-telemetry-data text-[11px] text-on-surface-variant">
+<div>CORE CLOCKS: <span class="text-tertiary">4.8 GHz</span></div>
+<div>BANDWIDTH: <span class="text-secondary">2.4 GB/s</span></div>
+<div>FAILURES: <span class="text-tertiary">0 DETECTED</span></div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-on-surface-variant text-[11px]">
+<div class="flex items-center gap-4">
+<a class="hover:text-white transition-colors uppercase" href="https://github.com/ard12115">GitHub Registry</a>
+<span>/</span>
+<a class="hover:text-white transition-colors uppercase" href="https://linkedin.com">LinkedIn</a>
+<span>/</span>
+<button class="hover:text-white transition-colors uppercase" onclick="toggleReadmeModal(true)">Raw Specs</button>
+</div>
+<div>DIN 1451 / SWISS SPEC FORMAT // 2026 EDITION</div>
+</div>
+</div>
+</footer>
+<!-- SCRIPT LOGIC FOR FILTERING & MODAL -->
+<script>
+  function filterCategory(category) {
+    const rows = document.querySelectorAll('.project-row');
+    const buttons = document.querySelectorAll('.filter-tab');
+
+    // Update button active state
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-cat') === category) {
+        btn.classList.add('bg-white', 'text-[#080a0f]', 'font-semibold');
+        btn.classList.remove('text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-white', 'text-[#080a0f]', 'font-semibold');
+        btn.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // Filter spec rows
+    rows.forEach(row => {
+      const rowCat = row.getAttribute('data-category');
+      if (category === 'all' || rowCat === category) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function toggleReadmeModal(show) {
+    const modal = document.getElementById('readme-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function copyReadmeText() {
+    const textarea = document.getElementById('markdown-snippet');
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value).then(() => {
+      const status = document.getElementById('copy-status');
+      status.textContent = 'COPIED SUCCESSFULLY TO CLIPBOARD';
+      setTimeout(() => {
+        status.textContent = 'CLICK TO COPY SPECIFICATION';
+      }, 3000);
+    });
+  }
+</script>
+</body></html>

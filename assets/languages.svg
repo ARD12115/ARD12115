@@ -1,63 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="270" viewBox="0 0 960 270" role="img" aria-label="Language mix across my repositories: HTML 30%, Python 24%, GDScript 21%, JavaScript 11%, TypeScript 8%, C++ 3%, CSS 3%, Other 2%">
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#04040a"><animate attributeName="stop-color" values="#04040a;#0a0418;#04101a;#04040a" dur="14s" repeatCount="indefinite"/></stop>
-    <stop offset="1" stop-color="#0b0616"><animate attributeName="stop-color" values="#0b0616;#04101a;#12041c;#0b0616" dur="14s" repeatCount="indefinite"/></stop>
-  </linearGradient>
-  <radialGradient id="glowC" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#00f0ff" stop-opacity=".28"/><stop offset="1" stop-color="#00f0ff" stop-opacity="0"/></radialGradient>
-  <radialGradient id="glowM" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff2bd6" stop-opacity=".22"/><stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/></radialGradient>
-  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#00f0ff" opacity=".05"/></pattern>
-  <filter id="neon" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <clipPath id="card"><rect width="960" height="270" rx="18"/></clipPath>
-  
-</defs>
-<g clip-path="url(#card)">
-  <rect width="960" height="270" fill="url(#bg)"/>
-  <ellipse cx="880" cy="240" rx="240" ry="120" fill="url(#glowC)"/>
-  <text x="40" y="44" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="16" font-weight="700" fill="#39ff14">&gt; stack.scan --all-repos</text>
-  <text x="290" y="44" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="16" fill="#39ff14">_<animate attributeName="opacity" values="1;1;0;0;1" dur="0.9s" repeatCount="indefinite"/></text>
-  <text x="40" y="62" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="11" fill="#5b6b8c">repository-weighted languages · byte totals from GitHub API</text>
-  <text x="40" y="91" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">HTML</text>
-  <rect x="150" y="78" width="560" height="16" rx="8" fill="#0a0a16" stroke="#00f0ff" stroke-opacity=".25"/>
-  <rect x="150" y="78" width="0" height="16" rx="8" fill="#00f0ff" filter="url(#neon)">
-    <animate attributeName="width" values="0;560;560;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="91" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#00f0ff">30%</text>  <text x="40" y="127" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">Python</text>
-  <rect x="150" y="114" width="560" height="16" rx="8" fill="#0a0a16" stroke="#39ff14" stroke-opacity=".25"/>
-  <rect x="150" y="114" width="0" height="16" rx="8" fill="#39ff14" filter="url(#neon)">
-    <animate attributeName="width" values="0;448;448;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="127" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#39ff14">24%</text>  <text x="40" y="163" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">GDScript</text>
-  <rect x="150" y="150" width="560" height="16" rx="8" fill="#0a0a16" stroke="#8b5cf6" stroke-opacity=".25"/>
-  <rect x="150" y="150" width="0" height="16" rx="8" fill="#8b5cf6" filter="url(#neon)">
-    <animate attributeName="width" values="0;392;392;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="163" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#8b5cf6">21%</text>  <text x="40" y="199" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">JavaScript</text>
-  <rect x="150" y="186" width="560" height="16" rx="8" fill="#0a0a16" stroke="#ffb000" stroke-opacity=".25"/>
-  <rect x="150" y="186" width="0" height="16" rx="8" fill="#ffb000" filter="url(#neon)">
-    <animate attributeName="width" values="0;205;205;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="199" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#ffb000">11%</text>  <text x="40" y="235" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">TypeScript</text>
-  <rect x="150" y="222" width="560" height="16" rx="8" fill="#0a0a16" stroke="#ff2bd6" stroke-opacity=".25"/>
-  <rect x="150" y="222" width="0" height="16" rx="8" fill="#ff2bd6" filter="url(#neon)">
-    <animate attributeName="width" values="0;149;149;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="235" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#ff2bd6">8%</text>  <text x="40" y="271" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">C++</text>
-  <rect x="150" y="258" width="560" height="16" rx="8" fill="#0a0a16" stroke="#61caff" stroke-opacity=".25"/>
-  <rect x="150" y="258" width="0" height="16" rx="8" fill="#61caff" filter="url(#neon)">
-    <animate attributeName="width" values="0;56;56;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="271" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#61caff">3%</text>  <text x="40" y="307" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">CSS</text>
-  <rect x="150" y="294" width="560" height="16" rx="8" fill="#0a0a16" stroke="#7dd3fc" stroke-opacity=".25"/>
-  <rect x="150" y="294" width="0" height="16" rx="8" fill="#7dd3fc" filter="url(#neon)">
-    <animate attributeName="width" values="0;56;56;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="307" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#7dd3fc">3%</text>  <text x="40" y="343" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#e6faff">Other</text>
-  <rect x="150" y="330" width="560" height="16" rx="8" fill="#0a0a16" stroke="#5b6b8c" stroke-opacity=".25"/>
-  <rect x="150" y="330" width="0" height="16" rx="8" fill="#5b6b8c" filter="url(#neon)">
-    <animate attributeName="width" values="0;37;37;0" keyTimes="0;0.18;0.92;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1;.4 0 1 1"/>
-  </rect>
-  <text x="726" y="343" font-family="'SFMono-Regular',Consolas,Menlo,'Liberation Mono',monospace" font-size="14" fill="#5b6b8c">2%</text>
-  <rect width="960" height="270" fill="url(#scan)"/>
-</g>
-<rect x=".5" y=".5" width="959" height="269" rx="18" fill="none" stroke="#8b5cf6" stroke-opacity=".4"/><g fill="none" stroke-width="2"><path d="M2,18 L2,6 Q2,2 6,2 L18,2" stroke="#00f0ff"/><path d="M942,2 L954,2 Q958,2 958,6 L958,18" stroke="#ff2bd6"/><path d="M2,252 L2,264 Q2,268 6,268 L18,268" stroke="#ff2bd6"/><path d="M942,268 L954,268 Q958,268 958,264 L958,252" stroke="#00f0ff"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250">
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#131a28" stroke-width=".6"/></pattern>
+<linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#4cd7f6"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+<rect width="900" height="250" fill="#080a0f"/><rect width="900" height="250" fill="url(#g)"/>
+<text x="30" y="30" fill="#4cd7f6" font-size="10" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1.5" text-anchor="start" >SECTION 03.0</text>
+<text x="120" y="30" fill="#e8ecf4" font-size="13" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="700" letter-spacing="0.5" text-anchor="start" >SYSTEM RUNTIME &amp; LANGUAGE COMPOSITION</text>
+<text x="870" y="30" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="end" >[AUDITED REPOSITORY COMMIT VOLUME]</text>
+<line x1="30" y1="42" x2="870" y2="42" stroke="#1e293b"/>
+<text x="30" y="62" fill="#8e95a5" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >STATIC CODE VOLUME ALLOCATION</text>
+<text x="870" y="62" fill="#e8ecf4" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="end" >100.0% AGGREGATE</text>
+<rect x="30" y="72" height="14" fill="#a5b4fc"><animate attributeName="width" from="0" to="250" dur="1.2s" begin="0.0s" fill="freeze"/></rect><text x="30" y="108" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.6" text-anchor="start" >HTML / UI</text>
+<text x="30" y="124" fill="#a5b4fc" font-size="15" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="start" >30.0%</text>
+<text x="30" y="138" fill="#a5b4fc" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Semantic Web Core</text>
+<rect x="282.0" y="72" height="14" fill="#10b981"><animate attributeName="width" from="0" to="200" dur="1.2s" begin="0.12s" fill="freeze"/></rect><text x="282.0" y="108" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.6" text-anchor="start" >PYTHON</text>
+<text x="282.0" y="124" fill="#10b981" font-size="15" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="start" >24.0%</text>
+<text x="282.0" y="138" fill="#10b981" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >PyTorch · ML Pipelines</text>
+<rect x="483.6" y="72" height="14" fill="#4cd7f6"><animate attributeName="width" from="0" to="174" dur="1.2s" begin="0.24s" fill="freeze"/></rect><text x="483.6" y="108" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.6" text-anchor="start" >GDSCRIPT</text>
+<text x="483.6" y="124" fill="#4cd7f6" font-size="15" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="start" >21.0%</text>
+<text x="483.6" y="138" fill="#4cd7f6" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Godot 4 Mechanics</text>
+<rect x="660.0" y="72" height="14" fill="#6366f1"><animate attributeName="width" from="0" to="90" dur="1.2s" begin="0.36s" fill="freeze"/></rect><text x="660.0" y="108" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.6" text-anchor="start" >JAVASCRIPT</text>
+<text x="660.0" y="124" fill="#6366f1" font-size="15" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="start" >11.0%</text>
+<text x="660.0" y="138" fill="#6366f1" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Client Runtime</text>
+<rect x="752.4" y="72" height="14" fill="#38bdf8"><animate attributeName="width" from="0" to="65" dur="1.2s" begin="0.48s" fill="freeze"/></rect><text x="752.4" y="108" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.6" text-anchor="start" >TYPESCRIPT</text>
+<text x="752.4" y="124" fill="#38bdf8" font-size="15" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="start" >8.0%</text>
+<text x="752.4" y="138" fill="#38bdf8" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Type-safe Services</text>
+<rect x="819.6" y="72" height="14" fill="#94a3b8"><animate attributeName="width" from="0" to="23" dur="1.2s" begin="0.6s" fill="freeze"/></rect><text x="819.6" y="108" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.6" text-anchor="start" >C++ / CUDA</text>
+<text x="819.6" y="124" fill="#94a3b8" font-size="15" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="700" letter-spacing="0" text-anchor="start" >3.0%</text>
+<text x="819.6" y="138" fill="#94a3b8" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Hardware Kernels</text>
+<line x1="30" y1="168" x2="226" y2="168" stroke="#1e293b"/><text x="30" y="186" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >FRONTEND ECOSYSTEM</text>
+<text x="30" y="204" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >React, Next.js, Vite, Tailwind CSS,</text>
+<text x="30" y="217" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >shadcn/ui</text>
+<line x1="240" y1="168" x2="436" y2="168" stroke="#1e293b"/><text x="240" y="186" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >AI / VISION ECOSYSTEM</text>
+<text x="240" y="204" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >PyTorch, OpenCV, ResNet18,</text>
+<text x="240" y="217" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >LLM Tooling</text>
+<line x1="450" y1="168" x2="646" y2="168" stroke="#1e293b"/><text x="450" y="186" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >DATA &amp; INFRASTRUCTURE</text>
+<text x="450" y="204" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >PostgreSQL, Apache Kafka,</text>
+<text x="450" y="217" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >OpenSearch, Docker</text>
+<line x1="660" y1="168" x2="856" y2="168" stroke="#1e293b"/><text x="660" y="186" fill="#8e95a5" font-size="7" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >GRAPHICS &amp; ENGINE</text>
+<text x="660" y="204" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Godot 4, GLSL / GDShader,</text>
+<text x="660" y="217" fill="#e8ecf4" font-size="9.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >CUDA, Linux</text>
+</svg>

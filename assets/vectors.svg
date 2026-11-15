@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250">
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#131a28" stroke-width=".6"/></pattern>
+<linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#4cd7f6"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+<rect width="900" height="250" fill="#080a0f"/><rect width="900" height="250" fill="url(#g)"/>
+<text x="30" y="30" fill="#4cd7f6" font-size="10" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1.5" text-anchor="start" >SECTION 01.0</text>
+<text x="120" y="30" fill="#e8ecf4" font-size="13" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="700" letter-spacing="0.5" text-anchor="start" >ARCHITECTURAL VECTORS &amp; ENGINEERING DISCIPLINES</text>
+<text x="870" y="30" fill="#8e95a5" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="end" >[ISO DOMAIN TAXONOMY // 3 VECTORS]</text>
+<line x1="30" y1="42" x2="870" y2="42" stroke="#1e293b"/>
+<rect x="30" y="56" width="276" height="176" fill="#0f172a" stroke="#334155" stroke-opacity="0.4"/>
+<rect x="30" y="56" width="276" height="2" fill="#4cd7f6"><animate attributeName="opacity" values=".4;1;.4" dur="3s" begin="0.0s" repeatCount="indefinite"/></rect><text x="42" y="76" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >VECTOR 01 // VEC_VISION.AI</text>
+<text x="294" y="76" fill="#10b981" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="600" letter-spacing="0" text-anchor="end" >STABLE</text>
+<text x="42" y="100" fill="#e8ecf4" font-size="12.5" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="700" letter-spacing="0" text-anchor="start" >AI &amp; COMPUTER VISION</text>
+<text x="42" y="120" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >Medical imaging reconstruction, anatomical ROI</text>
+<text x="42" y="133" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >segmentation, deep residual transfer models</text>
+<text x="42" y="146" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >(ResNet18), and persistent multi-agent LLM</text>
+<text x="42" y="159" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >orchestrators with state graphs.</text>
+<line x1="42" y1="180" x2="294" y2="180" stroke="#1e293b"/><text x="42" y="196" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >FRAMEWORKS</text>
+<text x="42" y="208" fill="#e8ecf4" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >PyTorch · TorchVision · OpenCV</text>
+<text x="42" y="222" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >TARGETS</text>
+<text x="81.19999999999999" y="222" fill="#e8ecf4" font-size="11" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" ></text>
+<text x="294" y="222" fill="#4cd7f6" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="end" >ResNet · UNet · Autoencoders</text>
+<rect x="310" y="56" width="276" height="176" fill="#0f172a" stroke="#334155" stroke-opacity="0.4"/>
+<rect x="310" y="56" width="276" height="2" fill="#4cd7f6"><animate attributeName="opacity" values=".4;1;.4" dur="3s" begin="0.6s" repeatCount="indefinite"/></rect><text x="322" y="76" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >VECTOR 02 // VEC_DIST.FLOW</text>
+<text x="574" y="76" fill="#10b981" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="600" letter-spacing="0" text-anchor="end" >STABLE</text>
+<text x="322" y="100" fill="#e8ecf4" font-size="12.5" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="700" letter-spacing="0" text-anchor="start" >DISTRIBUTED SYSTEMS &amp; CLOUD</text>
+<text x="322" y="120" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >Strict Postgres atomic transactional outboxes,</text>
+<text x="322" y="133" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >high-throughput Apache Kafka streaming,</text>
+<text x="322" y="146" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >OpenSearch fuzzy indexing layers, and low-</text>
+<text x="322" y="159" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >overhead WebSocket pipelines.</text>
+<line x1="322" y1="180" x2="574" y2="180" stroke="#1e293b"/><text x="322" y="196" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >INFRASTRUCTURE</text>
+<text x="322" y="208" fill="#e8ecf4" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Kafka · PostgreSQL · Redis</text>
+<text x="322" y="222" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >CONCURRENCY</text>
+<text x="383.6" y="222" fill="#e8ecf4" font-size="11" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" ></text>
+<text x="574" y="222" fill="#4cd7f6" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="end" >ACID Isolation, 0% Outbox Loss</text>
+<rect x="590" y="56" width="276" height="176" fill="#0f172a" stroke="#334155" stroke-opacity="0.4"/>
+<rect x="590" y="56" width="276" height="2" fill="#6366f1"><animate attributeName="opacity" values=".4;1;.4" dur="3s" begin="1.2s" repeatCount="indefinite"/></rect><text x="602" y="76" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0.8" text-anchor="start" >VECTOR 03 // VEC_LOW.GRAPH</text>
+<text x="854" y="76" fill="#6366f1" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="600" letter-spacing="0" text-anchor="end" >ACTIVE</text>
+<text x="602" y="100" fill="#e8ecf4" font-size="12.5" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="700" letter-spacing="0" text-anchor="start" >GAME TECH &amp; LOW-LEVEL GRAPHICS</text>
+<text x="602" y="120" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >Custom GLSL/GDShader graphics pipelines,</text>
+<text x="602" y="133" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >algorithmic terrain generation, CUDA GPU</text>
+<text x="602" y="146" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >hashing memory caches, and emulator</text>
+<text x="602" y="159" fill="#8e95a5" font-size="10" font-family="'Segoe UI',Inter,Arial,sans-serif" font-weight="400" letter-spacing="0" text-anchor="start" >microsecond translation pacing.</text>
+<line x1="602" y1="180" x2="854" y2="180" stroke="#1e293b"/><text x="602" y="196" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >PIPELINE</text>
+<text x="602" y="208" fill="#e8ecf4" font-size="9" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" >Godot 4 · C++ · GLSL · CUDA</text>
+<text x="602" y="222" fill="#8e95a5" font-size="7.5" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="1" text-anchor="start" >FRAME LATENCY</text>
+<text x="674.8" y="222" fill="#e8ecf4" font-size="11" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="start" ></text>
+<text x="854" y="222" fill="#10b981" font-size="8" font-family="Consolas,'JetBrains Mono',Menlo,monospace" font-weight="400" letter-spacing="0" text-anchor="end" >16.1ms Fixed (60Hz Locked)</text>
+</svg>
