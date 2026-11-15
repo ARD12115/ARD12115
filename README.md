@@ -32,11 +32,10 @@ STATUS   = shipping</code></pre>
 
 ## 🚀 Projects
 
-All public repositories, newest first. Forks are marked with ⑂.
+All public repositories, newest first.
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**QFlow**](https://github.com/ARD12115/QFlow) ⑂ | Smart digital queue management: virtual tokens, live tracking, wait-time prediction, counter recommendations | `Flask` `Python` `SQLite` `JS` |
 | [**PulseCart**](https://github.com/ARD12115/PulseCart) | Storefront demo where Postgres owns inventory, a transactional outbox publishes to Kafka, and OpenSearch serves fuzzy search; atomic checkout race demo | `TypeScript` `Python` `Next.js` `Kafka` `PostgreSQL` `OpenSearch` |
 | [**Medical-Image-Enhancement**](https://github.com/ARD12115/Medical-Image-Enhancement-Project) | MedhaDrishti: brain & spine MRI enhancement (Autoencoder / ResNet18 transfer learning) and ROI segmentation for tumors, edema, lesions | `Python` `PyTorch` `OpenCV` |
 | [**ReliefNet**](https://github.com/ARD12115/ReliefNet) | Real-time disaster-relief coordination: matches camp surplus with unmet demand and recommends delivery routes via OSRM | `React` `Node.js` `MongoDB` `Socket.IO` |
@@ -45,12 +44,7 @@ All public repositories, newest first. Forks are marked with ⑂.
 | [**JARVIS-Assistant**](https://github.com/ARD12115/JARVIS-Assistant) | Desktop AI assistant with multiple LLM backends, voice I/O, built-in tools, and persistent memory | `Python` `React` `TypeScript` `Rust` |
 | [**Recircle**](https://github.com/ARD12115/Recircle) | Recycling assistant: image-based waste sorting, a campus digital twin, and grounded GenAI guidance | `Python` `Computer Vision` `GenAI` |
 | [**GR-racer**](https://github.com/ARD12115/GR-racer) | 2000s Black Box–style arcade racer in Godot 4: procedural roads, collisions, scenery; tuned for low-end PCs & Android | `Godot 4` `GDScript` `GLSL` |
-| [**XeniaShaderOpt**](https://github.com/ARD12115/XeniaShaderOpt) | Xenia Canary optimizer: shader caching, CUDA-assisted hashing, frame pacing, audio sync | `C++` `CUDA` `Python` |
-| [**skills**](https://github.com/ARD12115/skills) ⑂ | Skills for Real Engineers — straight from a .agents directory | `Markdown` |
-| [**cua**](https://github.com/ARD12115/cua) ⑂ | Computer-use 2.0: open-source drivers, cross-OS sandboxes, benchmarks for training/eval/data gen | `Python` |
-| [**superplane**](https://github.com/ARD12115/superplane) ⑂ | Open-source factory for one-shot engineering | `Go` |
-| [**Wand-Enhancer**](https://github.com/ARD12115/Wand-Enhancer) ⑂ | Advanced UX & interoperability extension for the Wand (WeMod) app | `C#` |
-| [**jailbreaks**](https://github.com/ARD12115/jailbreaks) ⑂ | A personal list of jailbreak experiments | — |
+| [**XeniaShaderOpt**](https://github.com/ARD12115/XeniaShaderOpt) | Xenia Canary optimizer: shader caching, CUDA-assisted hashing, frame pacing, audio sync | `C++` `CUDA` `Python` | — |
 
 <img src="https://raw.githubusercontent.com/ard12115/ard12115/main/assets/divider.svg" width="100%" alt="" />
 
